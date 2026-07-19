@@ -1,0 +1,113 @@
+body {
+    background-color: #E8ECED;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.spotlight-card {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 900 / 675; 
+    background-image: url('images/christus.webp'); 
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #000000;
+    border-radius: 40px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    grid-column: span 4;
+    margin-bottom: 5px;
+}
+
+
+.grid-content {
+    position: absolute;
+    top: 22%; 
+    left: 0;
+    right: 0;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+
+.presidency-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.quorum-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 12px;
+    justify-items: center;
+    width: 100%;
+    max-width: 440px; 
+}
+
+
+.portrait-container {
+    width: 100%;
+    max-width: 95px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;        
+    border: 3px solid #ffffff;   
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.portrait-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.portrait-container:hover {
+    border-color: #FFD700;      
+}
+
+
+@media (max-width: 768px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1rem; }
+    .grid-content { top: 18%; }
+    .portrait-container { border-width: 2px; }
+}

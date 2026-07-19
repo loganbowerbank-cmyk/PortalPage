@@ -1,0 +1,51 @@
+/* --- Global & Background Styles --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#d3d3d3, #001f3f) fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+/* --- Header Layout --- */
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background: url('../images/icenter.png') no-repeat center;
+  height: 150px;
+  display: flex;
+  align-items: center;       /* Centers text vertically */
+  justify-content: center;   /* Centers text horizontally */
+  color: white;
+}
+
+.header-image h1 {
+  margin: 0;
+  font-size: 3.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.33); /* Standardized semi-transparent black */
+}
+
+/* --- Content Wrapper --- */
+.content-box {
+  background: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0 black;
+  box-sizing: border-box;    /* Prevents padding from breaking width calculations */
+}
+
+/* --- Table Structure (Edge-to-Edge) --- */
+.devo-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 30px;
+}

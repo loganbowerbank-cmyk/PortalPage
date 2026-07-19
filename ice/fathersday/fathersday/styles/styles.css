@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f7;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #1a2a3a; /* Deep navy blue from the cap/jeans */
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    color: #ffd166; /* Warm sunset gold */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #f26419; /* Vibrant sunset orange */
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a2a3a;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 3px solid #f26419;
+    padding-bottom: 10px;
+}
+
+/* Image styling */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+
+main section {
+    background-color: #fffaf0; 
+    border-left: 5px solid #f26419;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+h2 {
+    color: #1a2a3a;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #4a4e69;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    h1, main img {
+        grid-column: span 3;
+        justify-self: center;
+    }
+    
+    main section {
+        margin-bottom: 0;
+        height: 100%;
+    }
+}
+
+footer {
+    background-color: #1a2a3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
